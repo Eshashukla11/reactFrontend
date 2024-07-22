@@ -1,43 +1,208 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: "Nunito", sans-serif;
 }
-.section-1{
-    width:100%;
-    height:100vh;
-    background-color: #ff4848;
+/* navbar */
+.navbar-wrap {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar-wrap{
-    background-color: white;
-    padding:1rem;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.img-wrap {
+  background-color: #ff4848;
+  border-radius: 10%;
+  width: 60px;
+  height: 60px;
+  padding-inline: 5px;
+  padding-top: 5px;
 }
-.img-wrap{
-     background-color:#ff4848;
-     border-radius:10%;
-     width:60px;
-     height:60px;
-     padding-inline:5px;
-     padding-top:5px;
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.img-wrap img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-   
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.nav-menu{
+.nav-menu-item {
+  font-size: 1.4rem;
+}
+.hamburger-menu {
+  font-size: 1.7rem;
+}
+/* navbar-end */
+
+/* section-1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff4848;
+  padding-inline: 2.5rem;
+  padding-block: 1.5rem;
+  display: flex;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.white-text {
+  color: white;
+}
+.black-text {
+  color: black;
+}
+.hero-section-1 {
+  /* border:1px solid blue;
+    padding:10px; */
+}
+.hero-img-section-1 {
+  /* border:1px solid green; */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.para-tag {
+  align-self: flex-end;
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 70%;
+  margin: 0 auto;
+}
+/* section-1 end */
+
+/* section-2 */
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  padding-inline: 2.5rem;
+  padding-block: 3.5rem;
+}
+.section-2-container {
+  /* border: 1px solid green; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 80%;
+}
+.section-2-wrap-1 {
+  /* border: 1px solid purple; */
+}
+.section-2-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight:bold;
+}
+.section-2-wrap-2 {
+  /* border: 1px solid blue; */
+}
+.section-2-sub-heading {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  font-weight:600;
+}
+.section-2-wrap-3{
+    /* border:1px solid red; */
     display:flex;
     align-items:center;
-    gap:.5rem;
+    justify-content:center;
+    gap:6rem;
 }
-.nav-menu-item{
-    font-size:1.4rem;
+.section-2-button-wrap-1{
+    padding-inline:2rem;
+    padding-block:1rem;
+    font-size:2.5rem;
+    border:3px solid black;
+    background-color: white;
+    border-radius:1rem;
+    font-weight:700;
+    color:#ff3131;
 }
-.hamburger-menu{
-    font-size: 1.7rem;
+.section-2-button-wrap-2{
+     padding-inline:2rem;
+    padding-block:1rem;
+    font-size:2.5rem;
+    border:3px solid black;
+    background-color: #ff3131;
+    border-radius:1rem;
+    font-weight:700;
+    color:white;
+}
+/* section-2 end */
+
+/* media query */
+
+@media screen and (max-width:768px) {
+    .section-1{
+        flex-direction:column;
+        height:100%;
+    }
+    .hero-text{
+        font-size:3rem;
+    }
+    .para-tag{
+       font-size: 1rem; 
+       width:100%; 
+       text-align:center;
+    }
+   .section-2-heading{
+    font-size:1.2rem;
+    width:100%;
+   }
+   .section-2-button-wrap-1{
+    font-size:1.2rem;
+   }
+   .section-2-button-wrap-2{
+    font-size:1.2rem;
+   }
+   .section-2-wrap-3{
+    flex-direction:column;
+    gap:1.5rem;
+   }
+   .section-2-container{
+    max-width: 100%;
+gap:2rem;
+   }
+   .section-2-sub-heading{
+    width:100%;
+    font-size:1rem;
+   }
+   .section-2{
+    padding-inline:10px;
+    padding-block:20px;
+   }
+}
+@media screen and (min-width:768px){
+.section-2-heading{
+    font-size:2.3rem;
+}
+.section-2-sub-heading{
+    font-size:1.5rem;
+}
+.section-2-wrap-3{
+    flex-direction:row;
+    gap:3rem;
+}
+ .section-2-button-wrap-1{
+    font-size:1.8rem;
+   }
+   .section-2-button-wrap-2{
+    font-size:1.8rem;
+   }
 }
