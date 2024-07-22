@@ -93,92 +93,32 @@ function App() {
           </div>
           <div className="section-3-wrap-2">
             {data.map((item, index) => (
-              <Card data={item} key={index}/>
+              <Card data={item} key={index} />
             ))}
-            {/* div-1 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">
-                  Website & Application Development
-                </p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-2 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">
-                  Website & Application Development
-                </p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-3 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">Marketplace Management</p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-4 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">
-                  Website & Application Development
-                </p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-5 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">
-                  Website & Application Development
-                </p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-6 */}
-            {/* <div className="section-3-card-wrap">
-              <div className="section-3-card-heading">
-                <p className="section-3-text-heading">
-                  Website & Application Development
-                </p>
-              </div>
-              <div className="section-3-card-sub-heading">
-                <p className="section-3-text-sub-heading">
-                  Elevate your business with our cutting-edge, efficent, and
-                  top-tier web development services.
-                </p>
-              </div>
-            </div> */}
-            {/* div-end */}
           </div>
+        </div>
+      </div>
+      {/* section-3 end */}
+      {/* section-4 */}
+      <div className="section-4">
+        <div className="section-4-container">
+<div className='section-4-img-wrap'>
+  <img src="/svgviewer-output.svg" alt="" />
+</div>
+<div className='section-4-heading'>
+  <p className='section-4-text-heading'>Our Vision</p>
+</div>
+<div className='section-4-description'>
+  <p className="section-4-text-description">To be the leading provider of innovative solutions, empowering businesses to thrive in the digital age through exceptional design, development, and growth services. We aim to transform traditional businesses and support startups, driving their success with cutting-edge technology and unparalleled customer service.</p>
+</div>
+        </div>
+      </div>
+      {/* section-4 end */}
+
+      {/* section-5 */}
+      <div className="section-5">
+        <div className='section-5-container'>
+
         </div>
       </div>
     </div>
