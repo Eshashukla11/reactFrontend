@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="navbar-wrap">
       <div className="img-wrap">
-        <img src="/brainSettings.png" alt="" />
+        <img src="/Img-1.png" alt="" />
       </div>
       <div className="nav-menu">
         <p className="nav-menu-item">Services</p>

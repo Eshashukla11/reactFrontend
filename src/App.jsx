@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import Card from "./components/Card.jsx";
+import FeatureCard from "./components/FeatureCard.jsx";
+import EmpCard from "./EmpCard.jsx";
 
 function App() {
   const data = [
@@ -29,24 +31,78 @@ function App() {
       desc: " Enhance your brand's presence with our expertly managed corporate events, designed to impress and engage your audience.",
     },
   ];
+  const FeatureCardData = [
+    {
+      img: "/Img-10.png",
+      heading: "In-House Expertise",
+      desc: "Utilize our in-house expertise to handle project requirements efficiently.",
+    },
+    {
+      img: "/Img-11.png",
+      heading: " Strategic Collaborations",
+      desc: "  Facilitate strategic collaborations from our extensive network to streamline project workflows.",
+    },
+    {
+      img: "/Img-12.png",
+      heading: "Simplified Process",
+      desc: " We simplify your journey by connecting you directly with trusted service providers, ensuring seamless project execution.",
+    },
+  ];
+  const NameCard = [
+    {
+      img: "/Img-4.jpg",
+      name: "Pratip Pratap",
+      designation: "Founder & CEO",
+    },
+    {
+      img: "/Img-5.jpg",
+      name: "Sanjeev Kr.",
+      designation: "Project Lead",
+    },
+    {
+      img: "/Img-6.jpg",
+      name: "Neha Sharma",
+      designation: "Social Media Inc.",
+    },
+    {
+      img: "/Img-7.jpg",
+      name: "Mausam Singh",
+      designation: "Vendor Co-ord.",
+    },
+    {
+      img: "/Img-8.jpg",
+      name: "Arti Kumari",
+      designation: "Team Lead Ops.",
+    },
+    {
+      img: "/Img-9.jpg",
+      name: "Raj Nandini",
+      designation: "Team Lead Ops.",
+    },
+  ];
   return (
     <div>
       <Navbar />
       {/* section-1 */}
       <div className="section-1">
-        <div className="hero-section-1">
-          <div className="">
-            <img src="" alt="" />
+        <div className="section-1-container">
+          <div className="hero-section-1">
+            <div className="hero-section-1-img-wrap">
+              <img src="/Img-1.png" alt="" />
+            </div>
+            <div className="hero-img-section-1">
+              <p className="hero-text white-text">
+                Brainiac<span className="black-text">osm</span>
+              </p>
+            </div>
           </div>
-          <div className="hero-img-section-1">
-            <p className="hero-text white-text">
-              Brainiac<span className="black-text">osm</span>
-            </p>
+          <div className="hero-section-1">
+            <div className="section-1-img-wrap">
+              <img src="/Img-2.png" alt="" />
+            </div>
           </div>
         </div>
-        <div className="hero-section-1">
-          <img src="" alt="" />
-        </div>
+
         <p className="para-tag">WE ARE IN THE BUSINESS OF BUILDING BUSINESS</p>
       </div>
       {/* section-1 end */}
@@ -117,6 +173,26 @@ function App() {
               with cutting-edge technology and unparalleled customer service.
             </p>
           </div>
+          <img
+            className="section-4-cloud-img img-wrap-1"
+            src="/Img-3.png"
+            alt=""
+          />
+          <img
+            className="section-4-cloud-img img-wrap-2"
+            src="/Img-3.png"
+            alt=""
+          />
+          <img
+            className="section-4-cloud-img img-wrap-3"
+            src="/Img-3.png"
+            alt=""
+          />
+          <img
+            className="section-4-cloud-img img-wrap-4"
+            src="/Img-3.png"
+            alt=""
+          />
         </div>
       </div>
       {/* section-4 end */}
@@ -131,51 +207,9 @@ function App() {
             efficient project execution through our own expertise and resources.
           </p>
           <div className="section-5-card-container">
-            <div className="section-5-card-wrap">
-              <div className="section-5-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-5-card-heading">
-                <p className="section-5-text-heading">In-House Expertise</p>
-              </div>
-              <div className="section-5-card-sub-heading">
-                <p className="section-5-text-sub-heading">
-                  Utilize our in-house expertise to handle project requirements
-                  efficiently.
-                </p>
-              </div>
-            </div>
-            <div className="section-5-card-wrap">
-              <div className="section-5-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-5-card-heading">
-                <p className="section-5-text-heading">
-                  Strategic Collaborations
-                </p>
-              </div>
-              <div className="section-5-card-sub-heading">
-                <p className="section-5-text-sub-heading">
-                  Facilitate strategic collaborations from our extensive network
-                  to streamline project workflows.
-                </p>
-              </div>
-            </div>
-            <div className="section-5-card-wrap">
-              <div className="section-5-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-5-card-heading">
-                <p className="section-5-text-heading">Simplified Process</p>
-              </div>
-              <div className="section-5-card-sub-heading">
-                <p className="section-5-text-sub-heading">
-                  We simplify your journey by connecting you directly with
-                  trusted service providers, ensuring seamless project
-                  execution.
-                </p>
-              </div>
-            </div>
+            {FeatureCardData.map((item, index) => (
+              <FeatureCard FeatureCardData={item} />
+            ))}
           </div>
         </div>
       </div>
@@ -190,67 +224,9 @@ function App() {
             at our core.
           </p>
           <div className="section-6-card-container">
-            {/* card-1 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Pratip Pratap</p>
-                <p className="section-6-text-sub-heading">Founder & CEO</p>
-              </div>
-            </div>
-            {/* card-2 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Sanjeev Kr.</p>
-                <p className="section-6-text-sub-heading">Project Lead</p>
-              </div>
-            </div>
-            {/* card-3 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Neha Sharma</p>
-                <p className="section-6-text-sub-heading">Social Media Inc.</p>
-              </div>
-            </div>
-            {/* card-4 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Mausam Singh</p>
-                <p className="section-6-text-sub-heading">Vendor Co-ord.</p>
-              </div>
-            </div>
-            {/* card-5 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Arti Kumari</p>
-                <p className="section-6-text-sub-heading">Team Lead Ops.</p>
-              </div>
-            </div>
-            {/* card-6 */}
-            <div className="section-6-card-wrap">
-              <div className="section-6-img-wrap">
-                <img src="" alt="" />
-              </div>
-              <div className="section-6-card-text">
-                <p className="section-6-text-heading">Raj Nandini</p>
-                <p className="section-6-text-sub-heading">Team Lead Ops.</p>
-              </div>
-            </div>
-            {/* card-end */}
+            {NameCard.map((item, index) => (
+              <EmpCard NameCard={item} key={index} />
+            ))}
           </div>
         </div>
       </div>
@@ -259,21 +235,55 @@ function App() {
       {/* section-7 */}
       <div className="section-7">
         <div className="section-7-container">
-          <h1 className="section-7-heading">Why Choose Brainiac<span className="black-heading">osm</span> for Your Business?</h1>
+          <h1 className="section-7-heading">
+            Why Choose Brainiac<span className="black-heading">osm</span> for
+            Your Business?
+          </h1>
           <div className="section-7-card-container">
             <div className="section-7-card-wrap">
               <p className="section-7-text-heading">From Vision to Reality</p>
-              <p className="section-7-text-description">From transforming traditional businesses to supporting startup ventures, we specialize in delivering comprehensive design, development, and growth services. Whether you're looking to digitalize your operations or launch  new idea, our team equipped to drive your successwith tailored strategies nd innovative solutions.</p>
+              <p className="section-7-text-description">
+                From transforming traditional businesses to supporting startup
+                ventures, we specialize in delivering comprehensive design,
+                development, and growth services. Whether you're looking to
+                digitalize your operations or launch new idea, our team equipped
+                to drive your successwith tailored strategies nd innovative
+                solutions.
+              </p>
             </div>
             <div className="section-7-card-wrap">
-              <p className="section-7-text-heading">Transparent Communication</p>
-              <p className="section-7-text-description">We prioritize clear and direct communication, ensuring you stay informed with real-time updates and seamless interaction with our team of experts. This approach guarantees transparency and collaboration for successful project outcomes.</p>
+              <p className="section-7-text-heading">
+                Transparent Communication
+              </p>
+              <p className="section-7-text-description">
+                We prioritize clear and direct communication, ensuring you stay
+                informed with real-time updates and seamless interaction with
+                our team of experts. This approach guarantees transparency and
+                collaboration for successful project outcomes.
+              </p>
             </div>
             <div className="section-7-card-wrap">
               <p className="section-7-text-heading">Flexibility to Scale</p>
-              <p className="section-7-text-description">We offer adaptable solutions tailored to meet our specific business needs, allowing you to scale operations efficiently. Whether you require short-term support or long-term partnerships, we empower your business to grow according to project demands.</p>
+              <p className="section-7-text-description">
+                We offer adaptable solutions tailored to meet our specific
+                business needs, allowing you to scale operations efficiently.
+                Whether you require short-term support or long-term
+                partnerships, we empower your business to grow according to
+                project demands.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+      {/* section-7 end */}
+
+      {/* section-8 */}
+
+      <div className="section-8">
+        <div className="section-8-container">
+          {/* <div className="section-8-img-wrap">
+            <img src="/Img-13.png" alt="" />
+          </div> */}
         </div>
       </div>
     </div>
