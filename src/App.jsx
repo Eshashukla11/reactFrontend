@@ -102,23 +102,178 @@ function App() {
       {/* section-4 */}
       <div className="section-4">
         <div className="section-4-container">
-<div className='section-4-img-wrap'>
-  <img src="/svgviewer-output.svg" alt="" />
-</div>
-<div className='section-4-heading'>
-  <p className='section-4-text-heading'>Our Vision</p>
-</div>
-<div className='section-4-description'>
-  <p className="section-4-text-description">To be the leading provider of innovative solutions, empowering businesses to thrive in the digital age through exceptional design, development, and growth services. We aim to transform traditional businesses and support startups, driving their success with cutting-edge technology and unparalleled customer service.</p>
-</div>
+          <div className="section-4-img-wrap">
+            <img src="/svgviewer-output.svg" alt="" />
+          </div>
+          <div className="section-4-heading">
+            <p className="section-4-text-heading">Our Vision</p>
+          </div>
+          <div className="section-4-description">
+            <p className="section-4-text-description">
+              To be the leading provider of innovative solutions, empowering
+              businesses to thrive in the digital age through exceptional
+              design, development, and growth services. We aim to transform
+              traditional businesses and support startups, driving their success
+              with cutting-edge technology and unparalleled customer service.
+            </p>
+          </div>
         </div>
       </div>
       {/* section-4 end */}
 
       {/* section-5 */}
       <div className="section-5">
-        <div className='section-5-container'>
+        <div className="section-5-container">
+          <h1 className="section-5-heading">How we deliver?</h1>
+          <p className="section-5-description">
+            We facilitate collabration by leverging our extensive database to
+            streamline and simplify the process for our clients, ensuring
+            efficient project execution through our own expertise and resources.
+          </p>
+          <div className="section-5-card-container">
+            <div className="section-5-card-wrap">
+              <div className="section-5-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-5-card-heading">
+                <p className="section-5-text-heading">In-House Expertise</p>
+              </div>
+              <div className="section-5-card-sub-heading">
+                <p className="section-5-text-sub-heading">
+                  Utilize our in-house expertise to handle project requirements
+                  efficiently.
+                </p>
+              </div>
+            </div>
+            <div className="section-5-card-wrap">
+              <div className="section-5-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-5-card-heading">
+                <p className="section-5-text-heading">
+                  Strategic Collaborations
+                </p>
+              </div>
+              <div className="section-5-card-sub-heading">
+                <p className="section-5-text-sub-heading">
+                  Facilitate strategic collaborations from our extensive network
+                  to streamline project workflows.
+                </p>
+              </div>
+            </div>
+            <div className="section-5-card-wrap">
+              <div className="section-5-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-5-card-heading">
+                <p className="section-5-text-heading">Simplified Process</p>
+              </div>
+              <div className="section-5-card-sub-heading">
+                <p className="section-5-text-sub-heading">
+                  We simplify your journey by connecting you directly with
+                  trusted service providers, ensuring seamless project
+                  execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* section-5 end */}
 
+      {/* section-6 */}
+      <div className="section-6">
+        <div className="section-6-container">
+          <h1 className="section-6-heading">Meet our team</h1>
+          <p className="section-6-description">
+            Get to know the passionate minds driving innovation and excellence
+            at our core.
+          </p>
+          <div className="section-6-card-container">
+            {/* card-1 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Pratip Pratap</p>
+                <p className="section-6-text-sub-heading">Founder & CEO</p>
+              </div>
+            </div>
+            {/* card-2 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Sanjeev Kr.</p>
+                <p className="section-6-text-sub-heading">Project Lead</p>
+              </div>
+            </div>
+            {/* card-3 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Neha Sharma</p>
+                <p className="section-6-text-sub-heading">Social Media Inc.</p>
+              </div>
+            </div>
+            {/* card-4 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Mausam Singh</p>
+                <p className="section-6-text-sub-heading">Vendor Co-ord.</p>
+              </div>
+            </div>
+            {/* card-5 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Arti Kumari</p>
+                <p className="section-6-text-sub-heading">Team Lead Ops.</p>
+              </div>
+            </div>
+            {/* card-6 */}
+            <div className="section-6-card-wrap">
+              <div className="section-6-img-wrap">
+                <img src="" alt="" />
+              </div>
+              <div className="section-6-card-text">
+                <p className="section-6-text-heading">Raj Nandini</p>
+                <p className="section-6-text-sub-heading">Team Lead Ops.</p>
+              </div>
+            </div>
+            {/* card-end */}
+          </div>
+        </div>
+      </div>
+      {/* section-6 end */}
+
+      {/* section-7 */}
+      <div className="section-7">
+        <div className="section-7-container">
+          <h1 className="section-7-heading">Why Choose Brainiac<span className="black-heading">osm</span> for Your Business?</h1>
+          <div className="section-7-card-container">
+            <div className="section-7-card-wrap">
+              <p className="section-7-text-heading">From Vision to Reality</p>
+              <p className="section-7-text-description">From transforming traditional businesses to supporting startup ventures, we specialize in delivering comprehensive design, development, and growth services. Whether you're looking to digitalize your operations or launch  new idea, our team equipped to drive your successwith tailored strategies nd innovative solutions.</p>
+            </div>
+            <div className="section-7-card-wrap">
+              <p className="section-7-text-heading">Transparent Communication</p>
+              <p className="section-7-text-description">We prioritize clear and direct communication, ensuring you stay informed with real-time updates and seamless interaction with our team of experts. This approach guarantees transparency and collaboration for successful project outcomes.</p>
+            </div>
+            <div className="section-7-card-wrap">
+              <p className="section-7-text-heading">Flexibility to Scale</p>
+              <p className="section-7-text-description">We offer adaptable solutions tailored to meet our specific business needs, allowing you to scale operations efficiently. Whether you require short-term support or long-term partnerships, we empower your business to grow according to project demands.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
