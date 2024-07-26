@@ -3,8 +3,15 @@ import Navbar from "./components/Navbar.jsx";
 import Card from "./components/Card.jsx";
 import FeatureCard from "./components/FeatureCard.jsx";
 import EmpCard from "./EmpCard.jsx";
+import ContactUsForm from "./components/ContactUsForm.jsx";
+import { useState } from "react";
 
 function App() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const openForm = () => setIsFormOpen(true);
+  const closeForm = () => setIsFormOpen(false);
+
   const data = [
     {
       heading: "Website & Application Development",
@@ -50,45 +57,45 @@ function App() {
   ];
   const NameCard = [
     {
-      img: "/Img-4.jpg",
+      img: "/Img-16.png",
       name: "Pratip Pratap",
       designation: "Founder & CEO",
     },
     {
-      img: "/Img-5.jpg",
+      img: "/Img-17.png",
       name: "Sanjeev Kr.",
       designation: "Project Lead",
     },
     {
-      img: "/Img-6.jpg",
+      img: "/Img-18.png",
       name: "Neha Sharma",
       designation: "Social Media Inc.",
     },
     {
-      img: "/Img-7.jpg",
+      img: "/Img-19.png",
       name: "Mausam Singh",
       designation: "Vendor Co-ord.",
     },
     {
-      img: "/Img-8.jpg",
+      img: "/Img-20.png",
       name: "Arti Kumari",
       designation: "Team Lead Ops.",
     },
     {
-      img: "/Img-9.jpg",
+      img: "/Img-21.png",
       name: "Raj Nandini",
       designation: "Team Lead Ops.",
     },
   ];
   return (
-    <div>
+    <div className="main-container">
       <Navbar />
       {/* section-1 */}
       <div className="section-1">
         <div className="section-1-container">
           <div className="hero-section-1">
             <div className="hero-section-1-img-wrap">
-              <img src="/Img-1.png" alt="" />
+              <img src="Img-15.png" alt="" />
             </div>
             <div className="hero-img-section-1">
               <p className="hero-text white-text">
@@ -102,8 +109,11 @@ function App() {
             </div>
           </div>
         </div>
-
-        <p className="para-tag">WE ARE IN THE BUSINESS OF BUILDING BUSINESS</p>
+        <div className="section-1-card">
+          <p className="para-tag">
+            WE ARE IN THE BUSINESS OF BUILDING BUSINESS
+          </p>
+        </div>
       </div>
       {/* section-1 end */}
       {/* section-2 */}
@@ -123,10 +133,15 @@ function App() {
             </p>
           </div>
           <div className="section-2-wrap-3">
-            <button className="section-2-button-wrap-1">Book a call</button>
-            <button className="section-2-button-wrap-2">Collaborate</button>
+            <a className="section-2-button-wrap-1" href="tel:+91 9131959993">
+              Book a call
+            </a>
+            <button onClick={openForm} className="section-2-button-wrap-2">
+              Collaborate
+            </button>
           </div>
         </div>
+         {isFormOpen && <ContactUsForm closeForm={closeForm} />}
       </div>
       {/* section-2 end */}
 
@@ -281,9 +296,9 @@ function App() {
 
       <div className="section-8">
         <div className="section-8-container">
-          {/* <div className="section-8-img-wrap">
+          <div className="section-8-img-wrap">
             <img src="/Img-13.png" alt="" />
-          </div> */}
+          </div>
         </div>
       </div>
       {/* section-8 end */}
