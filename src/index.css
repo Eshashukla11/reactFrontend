@@ -466,7 +466,7 @@ object-fit: cover;
   padding-block: 3rem;
 }
 .section-7-container {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
