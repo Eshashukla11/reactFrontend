@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="footer-section-container">
         <div className="footer-section-wrapper">
           <div className="footer-section-img-wrap">
-            <img src="/Img-13.png" alt="" />
+            <img src="/Img-15.png" alt="" />
           </div>
           <p className="footer-section-item">
-            Brainia<span>cosm</span>
+            Brainiacosm
           </p>
           <p className="footer-section-item">
             Providing reliable tech since 2023
