@@ -4,6 +4,7 @@ import Card from "./components/Card.jsx";
 import FeatureCard from "./components/FeatureCard.jsx";
 import EmpCard from "./EmpCard.jsx";
 import ContactUsForm from "./components/ContactUsForm.jsx";
+import Footer from "./components/Footer.jsx";
 import { useState } from "react";
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
     },
   ];
   return (
-    <div className="main-container">
+    <div>
       <Navbar />
       {/* section-1 */}
       <div className="section-1">
@@ -292,16 +293,10 @@ function App() {
       </div>
       {/* section-7 end */}
 
-      {/* section-8 */}
+      {/* footer-section */}
 
-      <div className="section-8">
-        <div className="section-8-container">
-          <div className="section-8-img-wrap">
-            <img src="/Img-13.png" alt="" />
-          </div>
-        </div>
-      </div>
-      {/* section-8 end */}
+      <Footer />
+      {/* footer end */}
     </div>
   );
 }
